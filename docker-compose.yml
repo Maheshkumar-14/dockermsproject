@@ -1,6 +1,4 @@
 version: '3.8'
-networks:
-   mahesh:
 services:
   movies:
     image: mahesh147/mymovies:latest
@@ -8,8 +6,6 @@ services:
       - "85:80"
     deploy:
       replicas: 3
-    network:
-      - mahesh
   train:
     image: mahesh147/mytrain:latest
     ports:
