@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: mahesh147/paytmmovies:latest
+    image: mahesh147/mymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: mahesh147/paytmtrain:latest
+    image: mahesh147/mytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: mahesh147/paytmdth:latest
+    image: mahesh147/mydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: mahesh147/paytmrecharge:latest
+    image: mahesh147/myrecharge:latest
     ports:
       - "84:80"
     deploy:
