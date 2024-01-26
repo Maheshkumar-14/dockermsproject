@@ -3,7 +3,7 @@ services:
   movies:
     image: mahesh147/mymovies:latest
     ports:
-      - "81:80"
+      - "85:80"
     deploy:
       replicas: 3
   train:
