@@ -6,6 +6,8 @@ services:
       - "85:80"
     deploy:
       replicas: 3
+    network:
+      name: mahesh  
   train:
     image: mahesh147/mytrain:latest
     ports:
